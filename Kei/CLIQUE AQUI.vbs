@@ -1,0 +1,7 @@
+x=msgbox("you",0+32,"you")
+x=msgbox("and",0+64,"and")
+x=msgbox("me",0+48,"me")
+x=msgbox("always",0+16,"always")
+x=msgbox("and forever?",0+32,"and forever?")
+x=msgbox("um coração é um fardo muito pesado, posso cuidar do seu?",04,"um coração é um fardo muito pesado, posso cuidar do seu?")
+x=msgbox("TE AMO MUITO",0,":O")
