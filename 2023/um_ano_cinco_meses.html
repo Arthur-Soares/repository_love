@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comemoração de 1 Ano e 5 Meses de Relacionamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);            
+            padding: 20px;            
+            background-color: rgba(0,0,0,0.8); /* AQUI está o fundo semi-transparente */
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #FF4500;
+        }
+        p {            
+            line-height: 1.2;
+        }
+        .mensagem {
+            font-style: italic;
+            color: #E82F2F;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .grid-item {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+        }
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" style="animation: fadein 3s 0s forwards; background-image: url('../img/kei_arth_03.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 3s forwards; background-image: url('../img/kei_arth_05.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 6s forwards; background-image: url('../img/kei_arth_07.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 9s forwards; background-image: url('../img/kei_arth_01.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 12s forwards; background-image: url('../img/kei_arth_02.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 15s forwards; background-image: url('../img/kei_arth_08.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 18s forwards; background-image: url('../img/kei_arth_06.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 21s forwards; background-image: url('../img/kei_arth_09.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 24s forwards; background-image: url('../img/kei_arth_04.jpg')"></div>
+        <!-- Adicione mais divs .grid-item conforme necessário para o número total de imagens -->
+    </div>
+    <div class="container col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11">
+        <strong>
+            <p>Olá meu Amor...</p>
+            <p>Hoje completamos 1 ano e 5 meses de momentos inesquecíveis juntos.</p>
+            <p>Você é o melhor acontecimento da minha vida.</p>            
+            <p class="mensagem">"Aquela mulher, aquela era sua rainha" — Rainha das sombras - TOG 4 </p>
+            <p>Cada dia ao seu lado é uma página de um livro maravilhoso que estamos escrevendo juntos. Cada momento, cada risada, cada abraço, cada beijo são tesouros que guardarei para sempre no meu coração.</p>            
+            <p>Com você, aprendi o significado da palavra "amor". É a sua presença que transforma os dias comuns em experiências extraordinárias.</p>
+            <p>Você é a razão do meu sorriso mais sincero e da minha felicidade mais profunda.</p>
+            <p>Embora a distância nos separe fisicamente, o que sentimos é mais forte do que qualquer obstáculo. Cada dia que passa nos aproxima ainda mais, e em breve estaremos juntos novamente, criando novas lembranças e fortalecendo nosso vínculo.</p>
+            <p>Estou aqui para você, em todos os momentos, nos altos e baixos, porque juntos somos invencíveis.</p>
+            <p>Com todo o meu amor,<br>Arthur</p>
+        </strong>        
+    </div>    
+</body>
+</html>
