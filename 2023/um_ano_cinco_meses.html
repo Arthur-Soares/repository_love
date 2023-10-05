@@ -4,11 +4,10 @@
     <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Comemoração de 1 Ano e 5 Meses de Relacionamento</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+    <link href="../plugins/bootstrap-5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../plugins/fontawesome-6.4.2/css/all.min.css" rel="stylesheet">	
+    <script type="text/javascript" src="../plugins/fontawesome-6.4.2/js/all.min.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>	
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
@@ -16,14 +15,13 @@
             text-align: center;
             overflow: hidden;
         }
-        .container {
-            color: white;
-            position: relative; /* Alterado de 'absolute' para 'relative' */
-            padding: 10px;
-            background-color: rgba(0,0,0,0.6);
-            border-radius: 20px;
-            /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);*/
-            overflow: auto;
+        .container {            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;            
+            border-radius: 20px;          
         }
         h1 {
             color: #FF4500;
@@ -60,36 +58,82 @@
         }
         @keyframes fadein {
             from { opacity: 0; }
-            to   { opacity: 1; }
+            to   { opacity: 1;  pointer-events: auto; /* Habilita o clique quando estiver visível */ }
+        }
+
+        .heart-div{
+            opacity: 0;
+            pointer-events: none; /* Desabilita o clique inicialmente */
+        }
+
+        .heart-div:hover{
+            cursor: pointer;	  
         }
     </style>
+    <script>        
+		jQuery.extend({
+	 	   postJSON: function( url, data, callback) {
+	 	      return jQuery.post(url, data, callback, "json");
+	 	   }
+	 	});
+
+        function modalDeclaracao(){
+			$("#modalDeclaracao").modal("show");
+		}
+    </script>
 </head>
 <body>
     <div class="grid-container">
         <div class="grid-item" style="animation: fadein 3s 0s forwards; background-image: url('../img/kei_arth_03.jpg')"></div>
-        <div class="grid-item" style="animation: fadein 3s 3s forwards; background-image: url('../img/kei_arth_05.jpg')"></div>
-        <div class="grid-item" style="animation: fadein 3s 6s forwards; background-image: url('../img/kei_arth_07.jpg')"></div>
-        <div class="grid-item" style="animation: fadein 3s 9s forwards; background-image: url('../img/kei_arth_01.jpg')"></div>
-        <div class="grid-item" style="animation: fadein 3s 12s forwards; background-image: url('../img/kei_arth_02.jpg')"></div>
-        <div class="grid-item" style="animation: fadein 3s 15s forwards; background-image: url('../img/kei_arth_08.jpg')"></div>
-        <div class="grid-item" style="animation: fadein 3s 18s forwards; background-image: url('../img/kei_arth_06.jpg')"></div>
-        <div class="grid-item" style="animation: fadein 3s 21s forwards; background-image: url('../img/kei_arth_09.jpg')"></div>
-        <div class="grid-item" style="animation: fadein 3s 24s forwards; background-image: url('../img/kei_arth_04.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 2s forwards; background-image: url('../img/kei_arth_05.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 4s forwards; background-image: url('../img/kei_arth_07.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 6s forwards; background-image: url('../img/kei_arth_01.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 8s forwards; background-image: url('../img/kei_arth_02.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 10s forwards; background-image: url('../img/kei_arth_08.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 12s forwards; background-image: url('../img/kei_arth_06.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 14s forwards; background-image: url('../img/kei_arth_09.jpg')"></div>
+        <div class="grid-item" style="animation: fadein 3s 16s forwards; background-image: url('../img/kei_arth_04.jpg')"></div>
         <!-- Adicione mais divs .grid-item conforme necessário para o número total de imagens -->
     </div>
-    <div class="container mt-1 col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11">
-        <strong>
-            <p>Olá meu Amor...</p>
-            <p>Hoje completamos 1 ano e 5 meses de momentos inesquecíveis juntos.</p>
-            <p>Você é o melhor acontecimento da minha vida.</p>            
-            <p class="mensagem">"Aquela mulher, aquela era sua rainha" — Rainha das sombras - TOG 4 </p>
-            <p>Cada dia ao seu lado é uma página de um livro maravilhoso que estamos escrevendo juntos. Cada momento, cada risada, cada abraço, cada beijo são tesouros que guardarei para sempre no meu coração.</p>            
-            <p>Com você, aprendi o significado da palavra "amor". É a sua presença que transforma os dias comuns em experiências extraordinárias.</p>
-            <p>Você é a razão do meu sorriso mais sincero e da minha felicidade mais profunda.</p>
-            <p>Embora a distância nos separe fisicamente, o que sentimos é mais forte do que qualquer obstáculo. Cada dia que passa nos aproxima ainda mais, e em breve estaremos juntos novamente, criando novas lembranças e fortalecendo nosso vínculo.</p>
-            <p>Estou aqui para você, em todos os momentos, nos altos e baixos, porque juntos somos invencíveis.</p>
-            <p>Com todo o meu amor,<br>Arthur</p>
-        </strong>        
-    </div>    
+    <div class="container">
+        <div class="justify-content-center heart-div" style="animation: fadein 3s 18s forwards;">  
+            <a onclick="javascript:modalDeclaracao();">              
+                <i class="fa-solid fa-heart fa-beat" style="color: #eb0000; font-size: 20em; position: relative;"></i>  
+                <div style="text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 2em; color: white;"><strong>Entrar</strong></div>
+            </a>
+        </div>                   
+    </div>
+     <!-- MODAL DECLARAÇÃO -->
+     <div class="modal fade" data-bs-backdrop="static" id="modalDeclaracao" tabindex="1" role="dialog" aria-labelledby="modalDeclaracao" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content" style="border-radius: 20px;">
+              <div class="modal-body">							
+                  <div class="card-deck">
+                      <div class="">
+                          <div class="">                              								
+                              <div class="card-body tab-pane active" id="card_mp">                                
+                                <strong>
+                                    <p>Olá meu Amor...</p>
+                                    <p>Hoje completamos 1 ano e 5 meses de momentos inesquecíveis juntos.</p>
+                                    <p>Você é o melhor acontecimento da minha vida.</p>            
+                                    <p class="mensagem">"Aquela mulher, aquela era sua rainha" — Rainha das sombras - TOG 4 </p>
+                                    <p>Cada dia ao seu lado é uma página de um livro maravilhoso que estamos escrevendo juntos. Cada momento, cada risada, cada abraço, cada beijo são tesouros que guardarei para sempre no meu coração.</p>            
+                                    <p>Com você, aprendi o significado da palavra "amor". É a sua presença que transforma os dias comuns em experiências extraordinárias.</p>
+                                    <p>Você é a razão do meu sorriso mais sincero e da minha felicidade mais profunda.</p>
+                                    <p>Embora a distância nos separe fisicamente, o que sentimos é mais forte do que qualquer obstáculo. Cada dia que passa nos aproxima ainda mais, e em breve estaremos juntos novamente, criando novas lembranças e fortalecendo nosso vínculo.</p>
+                                    <p>Estou aqui para você, em todos os momentos, nos altos e baixos, porque juntos somos invencíveis.</p>
+                                    <p>Com todo o meu amor,<br>Arthur</p>
+                                </strong>                                         							
+                                <div class="mt-3" align="right">										    
+                                    <button type="button" class="btn btn-danger btn_semi_redondo_confirm" data-bs-dismiss="modal"><strong>Fechar</strong></button>										    
+                                </div>																														
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>				       
+          </div>
+      </div>
+  </div> 	
 </body>
 </html>
