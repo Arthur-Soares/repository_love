@@ -1,4 +1,4 @@
-main {
+main { 
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -34,13 +34,13 @@ header {
 }
 
 .card {
-    aspect-ratio: 3/4;
-    width: 100%;
-    border-radius: 8px;
-    position: relative;
-    transition: all 400ms ease;
-    transform-style: preserve-3d;
-    background-color: #ccc;
+    aspect-ratio: 3/4 !important;
+    width: 100% !important;
+    border-radius: 8px !important;
+    position: relative !important;
+    transition: all 400ms ease !important;
+    transform-style: preserve-3d !important;
+    background-color: #ccc !important;
 }
 
 .face {
@@ -74,24 +74,20 @@ header {
 }
 
 .botoes {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 315px;
+    display: none;            
 }
 
 button {
-    border-radius: 30px;
-    cursor: pointer;
-    padding: 15px;
-    font-size: 20px;
-    margin-top: 50px;
-    background-color: #152a95;
-    border: 3px solid #2f75e0;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 2px;
+    border-radius: 30px !important;
+    cursor: pointer !important;
+    padding: 15px !important;
+    font-size: 20px !important;
+    margin-top: 20px !important;
+    background-color: #D30404 !important;
+    border: 3px solid black !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    letter-spacing: 2px !important;
 }
 
 button:hover {
