@@ -1,0 +1,173 @@
+h1{
+    color:white;
+    /*font-size:30px;*/
+}
+h2{
+    color:#757575;
+    font-size:20px;
+}
+h1, h2{
+    text-align:center;
+}
+p{
+    font-size:15px;
+    margin:0;
+}
+
+#dicas{
+    overflow-y:scroll;
+    height:90%;
+    width:25%;
+    text-align: justify;
+    /*padding:2% 2% 2% 3%;*/    
+    font-size:.8em;
+    position:fixed;    
+    top:.5%;
+    background-color: #F5F5F5;
+}
+/*
+#dicas li{
+    margin:.5%;
+}
+*/
+@media only screen and (max-width:639px){
+    #dicas{
+        overflow:unset;
+        height:auto;
+        margin:auto;
+        width:100%;
+        position:relative;
+    }
+}
+html, body{
+    margin:0;
+    padding:0;    
+}
+
+main {     
+    width: 100%;
+    background-image: url(images/capa1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+table{
+    width:25%;
+}
+table, tr, td{
+    border: 1px solid black;
+    background-color: white;
+}
+
+td{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.6em;
+    color: black;
+}
+
+td:hover{
+    background-color: #F9D387;
+    cursor: pointer;
+}
+
+.selecionada, .encontrada, .errado{
+    transition:.2s linear;
+}
+.selecionada{
+    background-color: lightblue;
+}
+.encontrada{
+    background-color: #009688;
+}
+
+.errado{
+    color: red;
+}
+
+/*
+#iniciar{
+    padding: 6%;
+    background-color: lightgrey;
+}
+*/
+#iniciar {   
+    position: relative;     
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 20px;       
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);            
+}
+
+
+#jogo{
+    text-align: center;
+}
+
+#btnPlay{
+    margin:auto;
+    display: block;
+}
+
+#parabens{
+    margin: auto;
+    text-align: center;
+    color: #FF5722;
+    transition: .2s linear 2s;
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+}
+
+#btnVoltar{
+    margin: auto;
+}
+
+.btn_semi_redondo_menor {
+    padding-top:10px; 
+    padding-bottom:10px; 
+    padding-left:20px; 
+    padding-right:20px; 
+    border-radius: 18px;	
+    font-size: 16px;				
+}
+
+.btn_semi_redondo_menor.contratar{
+    background-color: #083771;
+    color:#FFFFFF;
+    /*border-color:#083771;	*/
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;		    
+}
+
+.btn_semi_redondo_menor.contratar:hover{					    		   
+    background-color: #FFFFFF;
+    color:#083771; 
+}	
+
+@media only screen and (max-width: 639px) {
+    #dicas {
+        overflow: unset;
+        height: auto;
+        margin: auto;
+        width: 100%;
+        position: relative;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        font-size: 1em;
+    }
+}
+
