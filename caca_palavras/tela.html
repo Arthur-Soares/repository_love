@@ -25,208 +25,116 @@
 		</button>
 	</div>
 </div>
-<div id="jogo" hidden>
-	<h2 hidden id="parabens">Parabéns!</h2>		
-	<span style="font-size: 50px; text-shadow: 2px 2px 2px #ffffff, -2px 2px  2px #ffffff, 2px -2px  2px #ffffff, -2px -2px  2px #ffffff;"><strong>Caça-palavras</strong></span>
-	<p id="encontradas" style="font-size: 20px; font-weight: 600; text-shadow: 2px 2px 2px #ffffff, -2px 2px  2px #ffffff, 2px -2px  2px #ffffff, -2px -2px  2px #ffffff;"></p>
+<div id="jogo" hidden>		
+	<span style="font-size: 30px; text-shadow: 2px 2px 2px #ffffff, -2px 2px  2px #ffffff, 2px -2px  2px #ffffff, -2px -2px  2px #ffffff;"><strong>Caça-palavras</strong></span>	
 	<div class="mt-3 mb-3 p-2 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 		<ol id="dicas">			
 			<div class="justify-content-center mt-3 pb-4 col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11" allign="center">
 				<div class="text-center">
-					<span style="font-size: 30px;"><strong>Dicas</strong></span>
+					<span style="font-size: 20px;"><strong>Como jogar:</strong></span>
 				</div>
-				<li>É um meio de transporte terrestre que, geralmente, cabe cinco pessoas.</li>
-				<li>É um meio de transporte sob duas rodas.</li>
-				<li>É um meio de transporte com vários vagões ligados entre si e pode transportar pessoas ou cargas.</li>
-				<li>É um meio de transporte terrestre que passa por túneis subterrâneos ou por viadutos e realiza a parada em estações designadas.
-				<li>Meio de transporte usado para pedalar em pistas, ciclovias ou parques.</li>
-				<li>É um meio de transporte terrestre grande, com eixos dianteiros e traseiros, geralmente tem entre quatro e dezesseis rodas e, tem uma carreta.</li>
-				<li>Meio de transporte aquático que tem vela, começa com a letra B e tem cinco letras.</li>
-				<li>Meio de transporte aquático que afundou no filme Titanic.</li>
-				<li>Meio de transporte aquático que fica abaixo da água, pode flutuar sob a água e começa com a letra S.</li>
-				<li>Meio de transporte aéreo que tem duas asas, voa e começa com a letra A.</li>
-				<li>Meio de transporte aéreo que tem hélice e começa com a letra H.</li>
-				<li>Meio de transporte aéreo que tem cesto,  é movido a ar e começa com a letra B.</li>
+				<div class="text-justify">
+					Ao encontrar uma palavra, como por exemplo <b>"AMOR"</b> clique na primeira letra<b> (A) </b>e na ultima letra <b>(R)</b>, você pode selecionar ao contrário também da ultima letra para a primeira, após isso palavra ficará <span style=" background-color: lightblue;"><b>selecionada</b></span>;
+					<br>
+					<br>
+					<span style="font-size: 15px;"><b>Caso:</b></span>
+					<br>
+					- A palavra selecionada fique com o fundo <span style="background-color: #009688;"><b>verde</b></span>, você encontrou uma das palavras! <br>
+					- Se não, se as letras piscarem em <span style="color:red"><b>vermelho</b></span>, você pode ter selecionado errado, ou não é a palavra.
+					<br>
+					<br>
+					<span style="font-size: 15px;"><b>Como encontrar as palavras:</b></span>
+					<br>
+					- As palavras serão encontradas apenas na vertical <strong>( | )</strong> ou na Horizontal <strong>( — )</strong>										
+				</div>				
+				<hr style="margin-bottom: 1%;"/>
+				<div class="text-center">
+					<span style="font-size: 20px;"><strong>Dica</strong></span>
+				</div>
+				<li>Descubra palavras que representam <b>qualidades especiais</b> que admiro em você</li>
+	
 			</div>
 		</ol>
 	</div>
 	<table id="tabuleiro" align="center">
-	<tr>
-		<td>Ã</td>
-		<td>Ê</td>
-		<td>O</td>
-		<td>O</td>	
-		<td>Ã</td>	
-		<td>O</td>	
-		<td>F</td>	
-		<td>C</td>	
-		<td>A</td>	
-		<td>M</td>	
-		<td>O</td>	
-		<td>R</td>
-	</tr>
-	<tr>
-		<td>J</td>	
-		<td>K</td>	
-		<td>S</td>	
-		<td>Ã</td>	
-		<td>B</td>	
-		<td>D</td>	
-		<td>L</td>	
-		<td>T</td>	
-		<td>G</td>	
-		<td>W</td>	
-		<td>H</td>	
-		<td>Ô</td>
-	</tr>
-	<tr>	
-		<td>C</td>	
-		<td>A</td>	
-		<td>M</td>	
-		<td>I</td>	
-		<td>N</td>	
-		<td>H</td>	
-		<td>Ã</td>	
-		<td>O</td>	
-		<td>X</td>	
-		<td>Z</td>	
-		<td>E</td>	
-		<td>B</td>
-	</tr>
-	<tr>	
-		<td>H</td>	
-		<td>E</td>	
-		<td>L</td>	
-		<td>V</td>	
-		<td>Ç</td>	
-		<td>O</td>	
-		<td>B</td>	
-		<td>Q</td>	
-		<td>I</td>	
-		<td>M</td>	
-		<td>L</td>	
-		<td>I</td>
-	</tr>
-	<tr>	
-		<td>N</td>	
-		<td>A</td>	
-		<td>B</td>	
-		<td>A</td>	
-		<td>L</td>	
-		<td>Ã</td>	
-		<td>O</td>	
-		<td>L</td>	
-		<td>H</td>	
-		<td>O</td>	
-		<td>I</td>	
-		<td>C</td>
-	</tr>
-	<tr>	
-		<td>T</td>	
-		<td>B</td>	
-		<td>M</td>	
-		<td>E</td>	
-		<td>T</td>	
-		<td>R</td>	
-		<td>Ô</td>	
-		<td>T</td>	
-		<td>N</td>	
-		<td>X</td>	
-		<td>C</td>	
-		<td>I</td>
-	</tr>
-	<tr>	
-		<td>R</td>	
-		<td>L</td>	
-		<td>Ã</td>	
-		<td>O</td>	
-		<td>J</td>	
-		<td>K</td>	
-		<td>Ç</td>	
-		<td>Y</td>	
-		<td>A</td>	
-		<td>R</td>	
-		<td>Ó</td>	
-		<td>C</td>
-	</tr>
-	<tr>	
-		<td>E</td>	
-		<td>O</td>	
-		<td>B</td>	
-		<td>A</td>	
-		<td>R</td>	
-		<td>C</td>	
-		<td>O</td>	
-		<td>F</td>	
-		<td>V</td>	
-		<td>S</td>	
-		<td>P</td>	
-		<td>L</td>
-	</tr>
-	<tr>	
-		<td>M</td>	
-		<td>Ã</td>	
-		<td>O</td>	
-		<td>H</td>	
-		<td>E</td>	
-		<td>L</td>	
-		<td>S</td>	
-		<td>U</td>	
-		<td>I</td>	
-		<td>B</td>	
-		<td>T</td>	
-		<td>E</td>
-	</tr>
-	<tr>	
-		<td>B</td>	
-		<td>I</td>	
-		<td>M</td>	
-		<td>O</td>	
-		<td>T</td>	
-		<td>O</td>	
-		<td>C</td>	
-		<td>A</td>	
-		<td>O</td>	
-		<td>M</td>	
-		<td>E</td>	
-		<td>T</td>
-	</tr>
-	<tr>	
-		<td>F</td>	
-		<td>A</td>	
-		<td>V</td>	
-		<td>I</td>	
-		<td>O</td>	
-		<td>D</td>	
-		<td>H</td>	
-		<td>J</td>	
-		<td>T</td>	
-		<td>O</td>	
-		<td>R</td>	
-		<td>A</td>
-	</tr>
-	<tr>	
-		<td>Q</td>	
-		<td>Ã</td>	
-		<td>S</td>	
-		<td>U</td>	
-		<td>B</td>	
-		<td>M</td>	
-		<td>A</td>	
-		<td>R</td>	
-		<td>I</td>	
-		<td>N</td>	
-		<td>O</td>	
-		<td>Ô</td>
-	</tr>
-	<button class="mt-3 mb-3 btn_semi_redondo_menor contratar" hidden id="btnVoltar">Voltar</button>	
+		<tr>
+			<td>C</td><td>O</td><td>M</td><td>U</td><td>N</td><td>I</td><td>C</td><td>A</td><td>T</td><td>I</td><td>V</td><td>A</td>
+		</tr>
+		<tr>
+			<td>A</td><td>B</td><td>C</td><td>Y</td><td>E</td><td>O</td><td>M</td><td>P</td><td>M</td><td>S</td><td>E</td><td>O</td>
+		</tr>
+		<tr>
+			<td>R</td><td>R</td><td>O</td><td>I</td><td>S</td><td>D</td><td>A</td><td>A</td><td>Y</td><td>H</td><td>C</td><td>C</td>
+		</tr>
+		<tr>
+			<td>I</td><td>I</td><td>N</td><td>S</td><td>P</td><td>I</td><td>R</td><td>A</td><td>D</td><td>O</td><td>R</td><td>A</td>
+		</tr>
+		<tr>
+			<td>N</td><td>L</td><td>F</td><td>I</td><td>O</td><td>V</td><td>A</td><td>O</td><td>S</td><td>D</td><td>I</td><td>T</td>
+		</tr>
+		<tr>
+			<td>H</td><td>H</td><td>I</td><td>A</td><td>N</td><td>E</td><td>V</td><td>D</td><td>S</td><td>G</td><td>A</td><td>I</td>
+		</tr>
+		<tr>
+			<td>O</td><td>A</td><td>Á</td><td>T</td><td>T</td><td>R</td><td>I</td><td>H</td><td>E</td><td>O</td><td>T</td><td>V</td>
+		</tr>
+		<tr>
+			<td>S</td><td>N</td><td>V</td><td>H</td><td>Â</td><td>T</td><td>L</td><td>R</td><td>I</td><td>S</td><td>I</td><td>A</td>
+		</tr>
+		<tr>
+			<td>A</td><td>T</td><td>E</td><td>G</td><td>N</td><td>I</td><td>H</td><td>W</td><td>T</td><td>T</td><td>V</td><td>N</td>
+		</tr>
+		<tr>
+			<td>D</td><td>E</td><td>L</td><td>A</td><td>E</td><td>D</td><td>O</td><td>N</td><td>T</td><td>O</td><td>A</td><td>T</td>
+		</tr>
+		<tr>
+			<td>E</td><td>E</td><td>G</td><td>D</td><td>A</td><td>A</td><td>S</td><td>A</td><td>W</td><td>S</td><td>U</td><td>E</td>
+		</tr>
+		<tr>
+			<td>E</td><td>R</td><td>S</td><td>I</td><td>E</td><td>R</td><td>A</td><td>N</td><td>T</td><td>A</td><td>D</td><td>O</td>
+		</tr>
+		
+		<p id="encontradas" style="font-size: 20px; font-weight: 600; text-shadow: 2px 2px 2px #ffffff, -2px 2px  2px #ffffff, 2px -2px  2px #ffffff, -2px -2px  2px #ffffff;"></p>
+	<button class="mt-3 mb-3 btn_semi_redondo_menor contratar" hidden id="btnVoltar" onclick="javascript:modalPremios();">Clique Aqui</button>	
 </div>
 </main>
+ <!-- MODAL PRÊMIOS -->
+ <div class="modal fade" data-bs-backdrop="static" id="modalPremios" tabindex="1" role="dialog" aria-labelledby="modalPremios" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-md" role="document">
+	  <div class="modal-content" style="border-radius: 20px;">
+		  <div class="modal-body">							
+			  <div class="card-deck">
+				  <div class="">
+					  <div class="">                              								
+						  <div class="card-body tab-pane active" id="card_mp">                                							
+							<div class="mt-3" style="font-weight: 400; font-size: 18px;">										    
+								<i>
+									<p>"Em cada traço da sua existência, vejo uma alma <b>brilhante</b>, capaz de iluminar os dias mais sombrios. Sua <b>carinhosa</b> presença envolve meu coração, criando laços que resistem ao tempo. Sua capacidade <b>comunicativa</b> é uma forma <b>cativante</b> de se expressar que vai além das palavras humanas.</p>									
+									<p>Você é uma âncora <b>confiável</b> em tempos de tempestade, um farol que guia através das incertezas da vida. Sua mente <b>criativa</b> é um universo em expansão, onde as ideias dançam livres e se transformam em algo extraordinário.</p>									
+								    <p>Cada momento com você é uma jornada, uma aventura na qual a <b>espontaneidade</b> e a autenticidade se entrelaçam, transformando o ordinário em algo mágico e especial. Você é <b>divertida</b> de uma forma que nunca deixarei de sorrir para você.</p>									
+								    <p>É como um banquete para a alma, deslizar a mão pelo seu corpo, e sentir cada vez mais a <b>gostosa</b> sensação que criamos juntos.</p>									
+									<p>Você é uma fonte de <b>inspiração</b>, uma força que impulsiona os sonhos e os torna realidade. Sua presença é verdadeiramente <b>maravilhosa</b>, um presente para este mundo, e para mim."</p>
+									<div align="right">										    
+										<p><b>~ Amor da sua vida</b></p>  
+									</div>
+								</i>
+							</div>	
+							<div class="mt-3" align="right">										    
+								<button type="button" class="btn_semi_redondo_menor contratar" data-bs-dismiss="modal">Fechar</button>										    
+							</div>																														
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+		  </div>				       
+	  </div>
+  </div>
+</div> 
 <script>
 		var t = document.getElementById("tabuleiro");
-		var transportes, primeiroclique, encontradas, data;
+		var palavras, primeiroclique, encontradas, data;
 		function clique(e){
-			if(transportes.length > 0){
+			if(palavras.length > 0){
 				if(primeiroclique == false){
 					data.colunainicial = parseInt(e.target.dataset.index);
 					data.linhainicial = parseInt(e.target.parentElement.dataset.index);
@@ -316,9 +224,9 @@
 			//caso a palavra esteja invertida, a primeira condição vai dar falso e vai cair na segunda condicional
 			//que vai inverte a palavra e verificar de novo se tem na lista, caso sim vai retorna ela, caso, não achar mesmo invertendo, vai retorna falso
 			//isso é importante para palavras de cabeça para baixo no quebra cabeça
-			var palavraselecionada = transportes.includes(selecionados.palavra) ? selecionados.palavra : transportes.includes(selecionados.palavra.split("").reverse().join("")) ? selecionados.palavra.split("").reverse().join('') : false;
+			var palavraselecionada = palavras.includes(selecionados.palavra) ? selecionados.palavra : palavras.includes(selecionados.palavra.split("").reverse().join("")) ? selecionados.palavra.split("").reverse().join('') : false;
 			if(palavraselecionada){
-				transportes = transportes.filter(function(p){
+				palavras = palavras.filter(function(p){
 					if(palavraselecionada != p){
 						return p;
 					}
@@ -331,10 +239,9 @@
 					}
 				}, 1000);
 				encontradas += 1;
-				document.getElementById("encontradas").innerText = "Encontradas: "+encontradas+"\n Restantes: "+ transportes.length;
-				if(transportes.length == 0){
-					setTimeout(function(){
-						document.getElementById("parabens").hidden = false;
+				document.getElementById("encontradas").innerText = "Encontradas: "+encontradas+"\n Restantes: "+ palavras.length;
+				if(palavras.length == 0){
+					setTimeout(function(){						
 						document.getElementById("btnVoltar").hidden = false;
 					}, 2000);
 				}
@@ -361,11 +268,11 @@
 		}
 		
 function iniciaJogo(){
-			transportes=["AMOR", "MOTO","TREM", "METRÔ","BICICLETA", "CAMINHÃO", "BARCO", "NAVIO", "SUBMARINO", "AVIÃO","HELICÓPTERO", "BALÃO"];
+			palavras=["COMUNICATIVA", "CARINHOSA","GOSTOSA", "CONFIÁVEL", "MARAVILHOSA", "CATIVANTE", "ESPONTÂNEA", "DIVERTIDA", "CRIATIVA","INSPIRADORA", "BRILHANTE"];
 			primeiroclique = false;
 			encontradas = 0;
 			data = {};
-			document.getElementById("encontradas").innerText = "Encontradas: "+encontradas+"\n Restantes: "+ transportes.length;
+			document.getElementById("encontradas").innerText = "Encontradas: "+encontradas+"\n Restantes: "+ palavras.length;
 			for(var i = 0; i < t.rows.length; i++){
 				t.rows[i].id = "linha " + i;
 				t.rows[i].dataset.index = i;
@@ -377,8 +284,7 @@ function iniciaJogo(){
 					t.rows[i].cells[j].addEventListener("click", clique);
 				}
 			}
-			document.getElementById("iniciar").hidden = true;
-			document.getElementById("parabens").hidden = true;
+			document.getElementById("iniciar").hidden = true;			
 			document.getElementById("jogo").hidden = false;
 			document.getElementById("btnVoltar").hidden = true;
 		}
@@ -386,13 +292,17 @@ function iniciaJogo(){
 		btnPlay.onclick = function(){
 			iniciaJogo();
 		}
+		/*
 		var btnVoltar = document.getElementById("btnVoltar");
 		btnVoltar.onclick = function(){
 			btnVoltar.hidden = true;
-			document.getElementById("iniciar").hidden = false;
-			document.getElementById("parabens").hidden = true;
+			document.getElementById("iniciar").hidden = false;			
 			document.getElementById("jogo").hidden = true;
 		}
+		*/
+		function modalPremios(){
+       		$("#modalPremios").modal("show");
+    	}
 	</script>
 </body>
 
