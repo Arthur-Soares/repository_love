@@ -241,6 +241,7 @@ let tipo_dica = 0;
 
 themeButtons.forEach(function(theme){
     theme.addEventListener("click", function(){
+        currentTheme.innerHTML = theme.innerHTML
         // Limpa o conteúdo da div de dica
         const dicaElement = document.querySelector("#dica-message");
         dicaElement.innerHTML = '';
