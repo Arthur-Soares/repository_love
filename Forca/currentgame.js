@@ -43,7 +43,7 @@ const listaDicasTog = [
     "O mestre dos assassinos antes de Celaena.",
     "Ela é uma metamorfa e amiga próxima de Aelin.",
     "Uma curandeira com um grande destino.",
-    "Um navio que desempenha um papel crucial.",
+    "Um raça de cavalo que desempenha um papel crucial.",
     "Um príncipe das Montanhas Vermelhas.",
     "Princesa de Eyllwe e amiga de Celaena."
 ];
@@ -75,7 +75,7 @@ const listaDicasAcotar = [
     "Irmã mais velha de Feyre.",
     "A irmã mais nova de Feyre.",
     "Um dos generais da Corte Noturna.",
-    "Outro dos generais da Corte Noturna e amigo próximo de Rhysand.",
+    "Amigo próximo de Rhysand.",
     "Uma personagem misteriosa e poderosa.",
     "Uma das integrantes do Círculo Íntimo de Rhysand.",
     "Uma raça de guerreiros com asas.",
